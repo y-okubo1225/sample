@@ -32,6 +32,6 @@ public class UserController {
   public String displayList(Model model) {
     List<User> userlist = userService.searchAll();
     model.addAttribute("userlist", userlist);
-    return "user/list";
+    return "list.html";
   }
 }
